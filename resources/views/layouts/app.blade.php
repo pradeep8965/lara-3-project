@@ -6,17 +6,17 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Laravel</title>
         <style>
-            .a_tdbr{
+            .p_tdbr{
                 border:1px dashed black;
             }
             header{
-                height: 100px;
+                height: 120px;
                 background-color:#151C25;
                 color:#fff;
             }
             main{
-                height: 150px;
-                background-color:#D3D3D3;
+                height: 1500px;
+                background-color:#F8F6F0;
                 color:black;
             }
             footer{
@@ -31,12 +31,36 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
-        <div class="container-fluid a_tdbr">
-            <header class="a_tdbr  text-center fw-bold">AMAZON.in </header>
+        <div class="container-fluid p_tdbr">
+            <header class="p_tdbr  text-center fw-bold" >AMAZON.in <br/>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control  form-control-sm  border-info" placeholder="Search Amazon.in" >
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+                <button class="btn btn-outline-light">Amazon MiniTV  </button>
+                <button class="btn btn-outline-light">Amazon Pay </button>
+                <button class="btn btn-outline-light">>Best Seller  </button>
+                <button class="btn btn-outline-light"> Sell </button>
+                {{-- <x-button title="Mobiles" /> --}}
+                    <x-button title="Mobiles" dropdown="true">
+                        <li><a class="dropdown-item" href="#">Apple</a></li>
+                        <li><a class="dropdown-item" href="#">Samsung</a></li>
+                        <li><a class="dropdown-item" href="#">OnePlus</a></li>
+                        <li><a class="dropdown-item" href="#">Google Pixel</a></li>
+                        <li><a class="dropdown-item" href="#">VIvo</a></li>
+                        <li><a class="dropdown-item" href="#">IQOO 7</a></li>
+                    </x-button>
+                <button class="btn btn-outline-light">lectronics </button>
+                <button class="btn btn-outline-light"> New Release </button>
+                <button class="btn btn-outline-light"> aCustmor service </button>
+            </header>
             @yield('mymain')
-            <footer>
+            <footer >
             <div class="container text-center" >
-                <div class="col" style="background-color: #37475A;">
+                <div  href="#" class="col " style="background-color: #37475A;">
                 Back to top
             </div>
             </div>
